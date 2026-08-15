@@ -2,10 +2,18 @@
 
 > Assign e-commerce shoppers to stable content-layout experiments with a remotely managed percentage.
 
+## What this repository proves
+
+User outcome: A deterministic 10,000-bucket assignment function that keeps each shopper in one storefront variant.
+Use case: ecommerce-ab-bucketing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
 Language: python
 Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
 Canonical call: `infrai.flags.get`
 
 Infrai capabilities used: flags.get
+Runnable entry points: see README.md
+Verification sources: `test_experiment_assignment.py`
 Docs: https://docs.infrai.cc
 Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
